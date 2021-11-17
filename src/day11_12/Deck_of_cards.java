@@ -25,13 +25,16 @@ public class Deck_of_cards {
 		for (int i = 1; i < 5; i++) {
 			System.out.println("For Player" + i);
 			for (int j = 1; j < 14; j++) {
+
 				selectCard();
 			}
+
 			System.out.println("");
 		}
 	}
 
 	public static void selectCard() {
+
 		Random c = new Random();
 		int suit = c.nextInt(4);
 		int rank = c.nextInt(13);
